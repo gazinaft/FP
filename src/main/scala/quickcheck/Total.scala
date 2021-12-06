@@ -1,0 +1,5 @@
+package quickcheck
+
+class Total {
+
+}

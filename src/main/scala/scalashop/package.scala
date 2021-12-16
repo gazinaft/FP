@@ -136,7 +136,7 @@ package object scalashop extends BoxBlurKernelInterface {
 
   def optimalIntervals(width: Int, numTasks: Int): IndexedSeq[(Int, Int)] = {
     val range = if (width > numTasks) 0 to width by width/numTasks
-    else 0 to numTasks
+    else 0 to width
 
     range.zip(range.tail)
   }
